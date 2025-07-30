@@ -46,6 +46,14 @@ The suite currently includes:
 
 ---
 
+## 🔬 In-Depth Technical Analysis
+
+For a comprehensive, command-by-command breakdown of the pipeline's methodology and scientific rationale, please see our detailed technical analysis.
+
+[**Read the Full Technical Analysis Here**](TECHNICAL_ANALYSIS.md)
+
+---
+
 ## 🚀 Quick Start
 
 Get up and running with PHASE in a few steps.
@@ -64,11 +72,3 @@ Ensure you have the following dependencies installed:
 ```bash
 git clone [https://github.com/PHASE-Suite/PHASE-Suite.git](https://github.com/PHASE-Suite/PHASE-Suite.git)
 cd PHASE-Suite
-
----
-
-## 🔬 In-Depth Technical Analysis
-
-For a comprehensive, command-by-command breakdown of the pipeline's methodology and scientific rationale, please see our detailed technical analysis.
-
-[**Read the Full Technical Analysis Here**](TECHNICAL_ANALYSIS.md)
