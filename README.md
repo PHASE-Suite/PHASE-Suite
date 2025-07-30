@@ -42,7 +42,7 @@ The suite currently includes:
 * **Parallel Processing**: Built with GNU Parallel to efficiently process multiple samples across many CPU cores, significantly reducing runtime.
 * **Comprehensive Filtering**: Implements several layers of filtering based on **mapping quality**, **strand agreement**, and the removal of **non-unique mutation events** to ensure high-confidence results.
 * **Clear Outputs**: Generates well-structured output files, including a final tab-separated file of mutations ready for downstream analysis.
-* **(Coming Soon) Mutational Signature Analysis**: The accompanying Python script will allow for easy visualization of the mutational landscape (e.g., SBS, DBS, INDEL signatures).
+* **(Coming Soon) Mutational Signature Analysis**: The accompanying Python script will allow for easy visualization of the mutational landscape (e.g. SBS signatures).
 
 ---
 
