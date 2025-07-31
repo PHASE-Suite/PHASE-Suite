@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/PHASE-Suite/PHASE-Suite/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <a href="https://github.com/PHASE-Suite/PHASE-Suite/releases"><img src="https://img.shields.io/github/v/release/PHASE-Suite/PHASE-Suite?label=Latest%20Release" alt="Latest Release"></a>
-  <a href="https://zenodo.org/badge/latestdoi/your-repo-id"><img src="https://zenodo.org/badge/your-repo-id.svg" alt="DOI"></a>
+  <a href="https://zenodo.org/badge/latestdoi/your-repo-id"><img src="https://img.shields.io/badge/your-repo-id.svg" alt="DOI"></a>
   <a href="https://phase-suite.readthedocs.io/"><img src="https://img.shields.io/readthedocs/phase-suite" alt="Documentation Status"></a>
 </p>
 
@@ -25,7 +25,7 @@ In disciplines such as genetic toxicology, accurately identifying DNA mutations 
 
 To address this issue, error-corrected NGS (ecNGS) technologies have become an essential advancement. These methods—including PacBio HiFi sequencing—enhance accuracy by sequencing both strands of DNA redundantly, significantly reducing background errors and allowing for the reliable detection of extremely rare mutations.
 
-This project provides a powerful and accessible set of tools that implements this ecNGS strategy for PacBio HiFi bam files. By computationally pairing the forward and reverse strands of a single DNA molecule, PHASE filters out random errors to confidently call true mutations.
+This project provides a powerful and accessible set of tools that implements this ecNGS strategy for PacBio HiFi Analysis of Somatic Events. By computationally pairing the forward and reverse strands of a single DNA molecule, PHASE filters out random errors to confidently call true mutations.
 
 The suite currently includes:
 
@@ -54,25 +54,40 @@ For a comprehensive, command-by-command breakdown of the pipeline's methodology 
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Installation & Quick Start
 
-Get up and running with PHASE in a few steps.
+The recommended way to install PHASE Suite and its dependencies is by using the provided Conda environment file.
 
-**1. Prerequisites**
-Ensure you have the following dependencies installed:
-* `bash` (v4.0+)
-* `samtools` (v1.9+)
-* `bwa` (v0.7.17+)
-* `bedtools` (v2.29+)
-* `Java` (v8+)
-* `GNU Parallel`
-* Standard Unix utilities: `awk`, `sort`, `grep`, `cut`, `uniq`, `tr`
-
-**2. Clone the Repository**
+**1. Clone the Repository**
 ```bash
 git clone [https://github.com/PHASE-Suite/PHASE-Suite.git](https://github.com/PHASE-Suite/PHASE-Suite.git)
 cd PHASE-Suite
 ```
+
+**2. Create and Activate the Conda Environment**
+
+This command uses the `environment.yml` file to automatically install all required software.
+```bash
+conda env create -f environment.yml
+conda activate phase_suite_env
+```
+
+**3. Configure Pipeline Paths**
+
+Before running, you must open `phase-script.sh` in a text editor and provide the correct paths for your reference genome and the `sam2tsv.jar` file.
+```bash
+# Open phase-script.sh and edit these lines near the top:
+ref_fa="/path/to/your/reference_genome.fa"
+sam2tsv_jar="/path/to/your/jvarkit/sam2tsv.jar"
+```
+
+**4. Run the Pipeline**
+
+Place your input BAM files in the `original-bams/` directory and execute the script:
+```bash
+bash phase-script.sh
+```
+
 ---
 
 ## 📂 Repository Structure
