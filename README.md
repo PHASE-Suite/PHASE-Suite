@@ -29,7 +29,7 @@ This project provides a powerful and accessible set of tools that implements thi
 
 The suite currently includes:
 
-**PHASE Pipeline**: A robust bash script that automates the entire workflow, from raw PacBio BAM files to a final, high-confidence list of somatic mutations.
+**PHASE Pipeline** ([`phase-script.sh`](phase-script.sh)): A robust bash script that automates the entire workflow, from raw PacBio BAM files to a final, high-confidence list of somatic mutations.
 
 **Visualization Script** (Coming Soon): A Python tool for generating publication-quality plots of mutational signatures from the pipeline's output.
 
@@ -72,3 +72,18 @@ Ensure you have the following dependencies installed:
 ```bash
 git clone [https://github.com/PHASE-Suite/PHASE-Suite.git](https://github.com/PHASE-Suite/PHASE-Suite.git)
 cd PHASE-Suite
+```
+---
+
+## 📂 Repository Structure
+
+An overview of the key files and directories in this project:
+
+```
+PHASE-Suite/
+├── phase-script.sh       # <== The main executable bash pipeline
+├── TECHNICAL_ANALYSIS.md # <== In-depth explanation of the script's logic
+├── environment.yml       # <== Conda environment file for dependencies
+├── original-bams/        # <== Directory for your input BAM files
+└── README.md             # <== You are here!
+```
