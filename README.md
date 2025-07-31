@@ -25,7 +25,7 @@ In disciplines such as genetic toxicology, accurately identifying DNA mutations 
 
 To address this issue, error-corrected NGS (ecNGS) technologies have become an essential advancement. These methods—including PacBio HiFi sequencing—enhance accuracy by sequencing both strands of DNA redundantly, significantly reducing background errors and allowing for the reliable detection of extremely rare mutations.
 
-This project provides a powerful and accessible set of tools that implements this ecNGS strategy for PacBio HiFi Analysis of Somatic Events. By computationally pairing the forward and reverse strands of a single DNA molecule, PHASE filters out random errors to confidently call true mutations.
+This project provides a powerful and accessible set of tools that implements this ecNGS strategy for PacBio HiFi bam files. By computationally pairing the forward and reverse strands of a single DNA molecule, PHASE filters out random errors to confidently call true mutations.
 
 The suite currently includes:
 
