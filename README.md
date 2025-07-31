@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/PHASE-Suite/PHASE-Suite/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <a href="https://github.com/PHASE-Suite/PHASE-Suite/releases"><img src="https://img.shields.io/github/v/release/PHASE-Suite/PHASE-Suite?label=Latest%20Release" alt="Latest Release"></a>
-  <a href="https://zenodo.org/badge/latestdoi/your-repo-id"><img src="https://img.shields.io/badge/your-repo-id.svg" alt="DOI"></a>
+  [![DOI](https://zenodo.org/badge/1028706985.svg)](https://doi.org/10.5281/zenodo.16624362)
   <a href="https://phase-suite.readthedocs.io/"><img src="https://img.shields.io/readthedocs/phase-suite" alt="Documentation Status"></a>
 </p>
 
