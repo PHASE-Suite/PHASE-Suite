@@ -1,7 +1,7 @@
 <h1 align="center">PHASE (PacBio HiFi Analysis of Somatic Events)</h1>
 
 <p align="center">
-  A command-line toolkit for somatic mutation analysis from PacBio HiFi data.
+  A command-line toolkit for somatic mutation detection and analysis from PacBio HiFi data.
 </p>
 
 <p align="center">
