@@ -7,5 +7,6 @@ dependencies:
   - samtools>=1.9
   - bwa>=0.7.17
   - bedtools>=2.29
+  - jvarkit
   - parallel
   - openjdk>=8.0
