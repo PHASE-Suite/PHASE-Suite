@@ -69,11 +69,10 @@ conda activate phase_suite_env
 
 **3. Configure Pipeline Paths**
 
-Before running, you must open `phase-script.sh` in a text editor and provide the correct paths for your reference genome and the `sam2tsv.jar` file.
+Before running, you must open `phase-script.sh` in a text editor and provide the correct path to your reference genome file.
 ```bash
 # Open phase-script.sh and edit these lines near the top:
 ref_fa="/path/to/your/reference_genome.fa"
-sam2tsv_jar="/path/to/your/jvarkit/sam2tsv.jar"
 ```
 
 **4. Run the Pipeline**
