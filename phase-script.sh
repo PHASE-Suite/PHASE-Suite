@@ -172,7 +172,7 @@ split_and_extract() {
     for st in fwd rev; do
       (
         cat "$hdr" "$f" \
-          | sam2tsv_jar -R "$ref_fa" \
+          | sam2tsv -R "$ref_fa" \
           | awk -v st="$st" '
               $1 ~ ("/" st "$") && $10 == "M" {
                 alt = toupper($6)
