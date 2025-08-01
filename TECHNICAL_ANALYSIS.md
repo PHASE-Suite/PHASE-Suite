@@ -53,7 +53,6 @@ The script defines several key parameters at the beginning:
 * `jobs=3`: Dictates the maximum number of parallel `process_sample` jobs that GNU parallel will run concurrently.
 * `splits=4`: Determines how many chunks each BAM file will be divided into for parallel processing within the `split_and_extract` function.
 * `ref_fa="/path/to/reference/genome.fa"`: Path to the reference genome in FASTA format, essential for alignment and variant calling.
-* `sam2tsv_jar="/path/to/jvarkit/dist/sam2tsv.jar"`: Path to the jvarkit `sam2tsv.jar` utility, used for converting SAM/BAM alignments to a tab-separated format for easier parsing.
 * `workdir="$(pwd)"`: Sets the working directory to the current directory where the script is executed.
 * `bam_dir="$workdir/original-bams"`: Specifies the directory containing the input BAM files.
 * `out_dirs=(...)`: An array listing all necessary output subdirectories (bases, bed, output-bams, filtered-bams, fwd-rev, filtered-results, v1-joined). These directories are created using a `for` loop and `mkdir -p`, ensuring that all required output locations exist before processing begins.
@@ -111,7 +110,7 @@ This function focuses on extracting mismatch information from the **unfiltered**
 * **Chunking**: `total=$(samtools view -c "$bam")` counts the total number of reads in the BAM file. `chunk=$(( (total + splits - 1) / splits ))` calculates the approximate number of reads per chunk. `samtools view "$bam" | split -l "$chunk" - "$prefix"` then splits the BAM file (without its header) into multiple smaller files.
 * **Parallel Mismatch Extraction**: The script iterates over each generated chunk file. Inside the loop, for each chunk and for both `fwd` and `rev` strands, a subshell is launched in the background (`&`), enabling parallel execution.
     * `cat "$hdr" "$f"`: Concatenates the original SAM header with the current chunk file.
-    * `java -jar "$sam2tsv_jar" -R "$ref_fa"`: The combined header and chunk data are piped to `jvarkit sam2tsv.jar`. This Java utility converts SAM alignments into a tab-delimited format, using the reference genome to determine reference bases at aligned positions.
+    * `sam2tsv -R "$ref_fa"`: The combined header and chunk data are piped to `sam2tsv`. This Java utility converts SAM alignments into a tab-delimited format, using the reference genome to determine reference bases at aligned positions.
     * `awk -v st="$st" '...'`: This `awk` script processes the `sam2tsv.jar` output to identify mismatches. It filters for lines where the read name ends with `/fwd` or `/rev` and the CIGAR operation is a mismatch. It checks if the read base is different from the reference base (`alt != ref`) and the reference is not 'N'. It then constructs a unique key for each mismatch: `readname:chromosome:reference_position:reference_base:alternative_base`.
 * **`wait`**: After all background processes are launched, `wait` ensures that all parallel subshells complete before proceeding.
 * **`rm -f "$hdr" ${prefix}*`**: Cleans up the temporary SAM header file and all the split chunk files to free up disk space.
