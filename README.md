@@ -71,7 +71,7 @@ conda activate phase_suite_env
 
 Before running, you must open `phase-script.sh` in a text editor and provide the correct path to your reference genome file.
 ```bash
-# Open phase-script.sh and edit these lines near the top:
+# Open phase-script.sh and edit this line near the top:
 ref_fa="/path/to/your/reference_genome.fa"
 ```
 
