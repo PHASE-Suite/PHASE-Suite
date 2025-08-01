@@ -1,11 +1,7 @@
-<p align="center">
-  <img src="assets/PHASE_Suite_logo.png" alt="PHASE Suite Logo" width="200"/>
-</p>
-
-<h1 align="center">PHASE Suite</h1>
+<h1 align="center">PHASE (PacBio HiFi Analysis of Somatic Events)</h1>
 
 <p align="center">
-  A command‑line toolkit for somatic mutation detection from error-corrected next-generation sequencing PacBio HiFi data in genetic toxicology.
+  A command-line toolkit for somatic mutation analysis from PacBio HiFi data.
 </p>
 
 <p align="center">
@@ -18,13 +14,13 @@
 
 ## 📖 Introduction
 
-Welcome to the **PHASE Suite**! **P**acBio **H**iFi **A**nalysis of **S**omatic **E**vents.
+Welcome to the **PHASE Suite**!
 
-In disciplines such as genetic toxicology, accurately identifying DNA mutations is crucial for determining the genotoxic potential of chemicals and evaluating cancer risk. Although next-generation sequencing (NGS) has revolutionized genetic research, its effectiveness is limited by a major flaw: a built-in error rate ranging from 0.1% to 1% per base. This level of technical noise often overwhelms the actual mutation frequency, which may be as low as one in 100 million (1×10⁻⁸). Consequently, rare but important mutations relevant to cancer studies and safety testing are often obscured by sequencing errors and go undetected.
+Accurate detection of DNA mutations is essential in fields like genetic toxicology, where it's used to assess the genotoxicity of chemicals and evaluate cancer risk. While next-generation sequencing (NGS) has transformed genetic research, its utility is limited by an inherent error rate of 0.1% to 1% per base. This background noise often exceeds the true mutation rate—which can be as low as 1 in 100 million (1×10⁻⁸)—making it difficult to detect rare but biologically important mutations.
 
-To address this issue, error-corrected NGS (ecNGS) technologies have become an essential advancement. These methods—including PacBio HiFi sequencing—enhance accuracy by sequencing both strands of DNA redundantly, significantly reducing background errors and allowing for the reliable detection of extremely rare mutations.
+Error-corrected NGS (ecNGS) technologies have emerged to overcome this limitation. Methods such as **PacBio HiFi sequencing** improve accuracy by redundantly sequencing both DNA strands, dramatically reducing sequencing errors and enabling the reliable detection of ultra-rare mutations.
 
-This project provides a powerful and accessible set of tools that implements this ecNGS strategy for PacBio HiFi bam files. By computationally pairing the forward and reverse strands of a single DNA molecule, PHASE filters out random errors to confidently call true mutations.
+**PHASE** is a lightweight and user-friendly bioinformatic toolkit for analyzing PacBio HiFi BAM files to detect somatic mutations. By computationally pairing the forward and reverse strands of individual DNA molecules, it filters out random sequencing errors, enabling accurate identification of true low-frequency mutations.
 
 The suite currently includes:
 
