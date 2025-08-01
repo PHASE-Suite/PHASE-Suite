@@ -55,7 +55,7 @@ The recommended way to install PHASE Suite and its dependencies is by using the 
 
 **1. Clone the Repository**
 ```bash
-git clone [https://github.com/PHASE-Suite/PHASE-Suite.git](https://github.com/PHASE-Suite/PHASE-Suite.git)
+git clone https://github.com/PHASE-Suite/PHASE-Suite.git
 cd PHASE-Suite
 ```
 
