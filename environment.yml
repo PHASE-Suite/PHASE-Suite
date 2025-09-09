@@ -1,12 +1,43 @@
+# ===================================================================
+#
+#        CONDA ENVIRONMENT FOR THE COMPLETE PHASE SUITE
+#
+# This file installs all dependencies for both the command-line
+# pipeline (`phase_pipeline.sh`) and the interactive visualization
+# app (`phase_explorer.py`).
+#
+# To create the environment, run:
+# conda env create -f environment.yml
+#
+# To activate the environment, run:
+# conda activate phase_suite_env
+#
+# ===================================================================
+
 name: phase_suite_env
 channels:
   - bioconda
   - conda-forge
   - defaults
 dependencies:
+  # --- Core Pipeline Dependencies (for phase_pipeline.sh) ---
   - samtools>=1.9
   - bwa>=0.7.17
   - bedtools>=2.29
-  - jvarkit
-  - parallel
-  - openjdk>=8.0
+  - jvarkit      # Provides the 'sam2tsv' tool
+  - seqkit       # Used for efficient FASTA manipulation in demultiplexing
+  - parallel     # For parallel processing of samples
+  - openjdk>=8.0 # Java is required by jvarkit
+
+  # --- Python & Visualization App Dependencies (for phase_explorer.py) ---
+  - python>=3.10
+  - streamlit
+  - pandas
+  - numpy
+  - matplotlib
+  - scipy
+  - pyfaidx
+  - scikit-posthocs
+  - plotly
+  - kaleido      # Required by Plotly for exporting static images (PNG, PDF, etc.)
+
