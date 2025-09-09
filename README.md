@@ -48,19 +48,19 @@ The PHASE Suite pipeline and its underlying methodology have been successfully u
 
 * **Mutation accumulation following extended exposure of human HepaRG cells to a genotoxic carcinogen**. Journal of Environmental Science and Health, Part C. Published: 2025-08-22. [DOI: 10.1080/26896583.2025.2548146](https://doi.org/10.1080/26896583.2025.2548146)
 
-* **Mutation Frequencies in TK6 and L5178Y Cells: Implications for Error-Corrected Sequencing**. Environmental and molecular mutagenesis. Published: 2025-07-15. [DOI: 10.1002/em.70024](https://doi.org/10.1002/em.70024) | [PMID: 40663548](https://pubmed.ncbi.nlm.nih.gov/40663548/)
+* **Mutation Frequencies in TK6 and L5178Y Cells: Implications for Error-Corrected Sequencing**. Environmental and molecular mutagenesis. Published: 2025-07-15. [DOI: 10.1002/em.70024](https://doi.org/10.1002/em.70024)
 
 * **Assessment of in vivo chemical mutagenesis by long-read sequencing**. Toxicological Sciences. Published: 2024-11-01. [DOI: 10.1093/toxsci/kfae104](https://doi.org/10.1093/toxsci/kfae104)
 
 * **Evaluating the mutagenicity of N-nitrosodimethylamine in 2D and 3D HepaRG cell cultures using error-corrected next generation sequencing**. Archives of Toxicology. Published: 2024-04-07. [DOI: 10.1007/s00204-024-03731-4](https://doi.org/10.1007/s00204-024-03731-4)
 
-* **Unbiased whole genome detection of ultrarare off-target mutations in genome-edited cell populations by HiFi sequencing**. Environmental and molecular mutagenesis. Published: 2023-07-24. [DOI: 10.1002/em.22566](https://doi.org/10.1002/em.22566) | [PMID: 37488781](https://pubmed.ncbi.nlm.nih.gov/37488781/)
+* **Unbiased whole genome detection of ultrarare off-target mutations in genome-edited cell populations by HiFi sequencing**. Environmental and molecular mutagenesis. Published: 2023-07-24. [DOI: 10.1002/em.22566](https://doi.org/10.1002/em.22566)
 
-* **Evaluation of the mutagenic effects of Molnupiravir and N4-hydroxycytidine in bacterial and mammalian cells by HiFi sequencing**. Environmental and molecular mutagenesis. Published: 2022-08-01. [DOI: 10.1002/em.22510](https://doi.org/10.1002/em.22510) | [PMID: 36181379](https://pubmed.ncbi.nlm.nih.gov/36181379/)
+* **Evaluation of the mutagenic effects of Molnupiravir and N4-hydroxycytidine in bacterial and mammalian cells by HiFi sequencing**. Environmental and molecular mutagenesis. Published: 2022-08-01. [DOI: 10.1002/em.22510](https://doi.org/10.1002/em.22510)
 
-* **Genome-wide detection of ultralow-frequency substitution mutations in cultures of mouse lymphoma L5178Y cells and Caenorhabditis elegans worms by PacBio sequencing**. Environmental and molecular mutagenesis. Published: 2022-02-01. [DOI: 10.1002/em.22473](https://doi.org/10.1002/em.22473) | [PMID: 35224786](https://pubmed.ncbi.nlm.nih.gov/35224786/)
+* **Genome-wide detection of ultralow-frequency substitution mutations in cultures of mouse lymphoma L5178Y cells and Caenorhabditis elegans worms by PacBio sequencing**. Environmental and molecular mutagenesis. Published: 2022-02-01. [DOI: 10.1002/em.22473](https://doi.org/10.1002/em.22473)
 
-* **PacBio sequencing detects genome-wide ultra-low-frequency substitution mutations resulting from exposure to chemical mutagens**. Environmental and molecular mutagenesis. Published: 2021-09-02. [DOI: 10.1002/em.22462](https://doi.org/10.1002/em.22462) | [PMID: 34424574](https://pubmed.ncbi.nlm.nih.gov/34424574/)
+* **PacBio sequencing detects genome-wide ultra-low-frequency substitution mutations resulting from exposure to chemical mutagens**. Environmental and molecular mutagenesis. Published: 2021-09-02. [DOI: 10.1002/em.22462](https://doi.org/10.1002/em.22462)
 
     
 ---
@@ -81,7 +81,7 @@ The recommended way to install the PHASE Suite and all its dependencies is by us
 
 **1. Clone the Repository**
 ```bash
-git clone [https://github.com/PHASE-Suite/PHASE-Suite.git](https://github.com/PHASE-Suite/PHASE-Suite.git)
+git clone https://github.com/PHASE-Suite/PHASE-Suite.git
 cd PHASE-Suite
 ```
 
